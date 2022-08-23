@@ -31,7 +31,7 @@ engine:                                   # Engine settings.
       min_time: 10                       # Time the bot must have at least to use the online move.
       timeout: 3                          # Time the server has to respond.
   offer_draw:
-    enabled: true                         # Activate whether the bot should offer draw.
+    enabled: false                         # Activate whether the bot should offer draw.
     score: 5                              # If the absolute value of the score is less than or equal to this value, the bot offers/accepts draw (in cp)
     consecutive_moves: 10                 # How many moves in a row the absolute value of the score has to be below the draw value
     min_game_length: 50                   # Earliest move in which draw is offered.
@@ -45,10 +45,10 @@ engine:                                   # Engine settings.
     Hash: 128                              # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     UCI_Elo : 2850
-    Slow Mover: 40
+    Slow Mover: 30
     MultiPV: 500
 
-move_overhead_multiplier: 7             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+move_overhead_multiplier: 10             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
 challenge:                                # Incoming challenges. (Commenting allowed)
   concurrency: 1                          # Number of games to play simultaneously.
