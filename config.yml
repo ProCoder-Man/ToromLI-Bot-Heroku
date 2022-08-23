@@ -47,7 +47,8 @@ engine:                                   # Engine settings.
     UCI_Elo : 2850
     Slow Mover: 40
     MultiPV: 500
-    nodestime: 40
+    SyzygyProbeDepth: 100
+    SyzygyProbeLimit: 7
 
 move_overhead_multiplier: 6             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
